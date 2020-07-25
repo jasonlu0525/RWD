@@ -153,6 +153,7 @@ img {
 }
 .mw1024 {
   max-width: 1024px;
+  margin: 0 auto;
 }
 header {
   position: sticky;
@@ -297,10 +298,6 @@ header .top-list li a:not([title='加入購物車']):hover {
 .chang-page a:not(.arrow):hover {
   background: #3f5d45;
   color: #fff;
-}
-footer {
-  max-width: 1024px;
-  margin: 0 auto;
 }
 .mail {
   background: #3f5d45;
