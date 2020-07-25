@@ -341,9 +341,6 @@ footer {
   background-color: #eaf0ed;
   caret-color: #3f5d45;
 }
-.mail .subscribe input[ type='email']:focus {
-  background-color: #fff;
-}
 .mail .submit {
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png") no-repeat #ffe180;
   background-position: center;
