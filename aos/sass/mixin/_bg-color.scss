@@ -1,0 +1,5 @@
+@mixin dark-color_light-bg($dark:$dark-green, $light:$light-green) {
+    color: $dark;
+    background: $light;
+    @content
+}

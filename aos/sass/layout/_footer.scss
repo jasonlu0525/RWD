@@ -1,0 +1,112 @@
+.footer-bg-dark {
+    background: $dark-green;
+}
+
+.footer-bg-light {
+    background: $light-green;
+}
+
+.mail {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .sweet-mail {
+        display: flex;
+        align-items: center;
+
+        img[alt='icon-small'] {
+            width: 40px;
+            height: 40px;
+        }
+
+        .mail-title {
+            margin-left: 20px;
+            color: $info-font;
+        }
+    }
+
+    .subscribe {
+        display: flex;
+        position: relative;
+        box-sizing: content-box;
+        height: 56px;
+
+        .ic-email {
+            position: absolute;
+            top: 16px;
+            left: 20px;
+        }
+
+        input[ type='email'] {
+            padding-left: 52px;
+            border: none;
+            outline: none;
+            font-size: $fz-medium;
+            font-weight: $fw-b;
+            background-color: $light-green;
+            caret-color: $dark-green;
+        }
+    }
+
+    .submit {
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png') no-repeat $accent-color;
+        background-position: center;
+        box-sizing: content-box;
+        width: 0px;
+        padding: 0 32px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    color: $dark-green;
+    font-weight: $fw-b;
+
+    .info-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 1.5;
+
+        img[alt='lg-dark'] {
+
+            margin-bottom: 115px;
+        }
+
+        li:last-of-type {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .ic-fb,
+        .ic-line {
+            max-width: 32px;
+            max-height: 32px;
+            margin-right: 8px;
+        }
+    }
+
+    a {
+        color: $dark-green;
+    }
+
+
+    .info-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: space-between;
+        ;
+
+        .info-right-title {
+            flex-basis: 59px;
+        }
+    }
+}
