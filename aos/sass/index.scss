@@ -1,8 +1,4 @@
-@import "variable/variable";
-@import "mixin/bg-color";
-@import "reset";
-@import "layout/header";
-@import "layout/footer";
+@import"all";
 
 main {
     margin-bottom: 3rem;
@@ -11,6 +7,11 @@ main {
 .main {
     display: flex;
     margin-top: 3rem;
+
+    @include mobile-768 {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
 }
 
 .product {
@@ -22,6 +23,12 @@ main {
     color: $dark-green;
     line-height: 2rem;
     flex-shrink: 0;
+
+
+    @include mobile-768 {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
 
     h2 {
         padding: $padding-horizontal-product_menu 0;
@@ -49,17 +56,31 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
     overflow-x: hidden;
+    width: 66%;
+
+    @include mobile-768 {
+        width: 100%;
+        justify-content: space-evenly;
+    }
 
     li {
-        width: 48.3871%;
+        @include mobile-425 {
+            margin-bottom: 1.5rem;
+        }
 
         &:not(:last-of-type) {
-            margin-bottom: 20px;
+            margin-bottom: 1rem;
         }
     }
 
     .goods-pic {
         position: relative;
+
+        @include mobile-768 {
+            img {
+                width: 100%;
+            }
+        }
 
         .suggest {
             position: absolute;
@@ -88,13 +109,23 @@ main {
         .title {
             padding: 14px 33px;
             border-right: 1px solid $light-green;
-        }
-
-        .price {
-            padding: 0 20px 0 25px;
-            flex-shrink: 0;
-            flex-grow: 1;
+            flex-grow: 2;
             text-align: center;
+
+            @include pad-576 {
+                padding: 14px 38px;
+            }
+
+            .price {
+                padding: 0 20px 0 25px;
+                flex-shrink: 0;
+                flex-grow: 1;
+                text-align: center;
+
+                @include pad-576 {
+                    padding: 14px 25.4px 14px 25.95px;
+                }
+            }
         }
     }
 
@@ -119,6 +150,21 @@ main {
     justify-content: flex-end;
     margin-top: 20px;
 
+    @include mobile-768 {
+        margin-right: 56px;
+    }
+
+    @include mobile-425 {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    @include mobile-375 {
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+
     li {
         outline: 1px solid $light-green;
         flex-shrink: 0;
@@ -137,112 +183,6 @@ main {
         &:not(.arrow):hover {
             background: $dark-green;
             color: $info-font;
-        }
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    header {
-        justify-content: space-around;
-
-        .logo {
-            width: 114px;
-            padding: 0;
-        }
-
-        .top-menu {
-            display: block;
-        }
-
-        .top-list li:last-of-type {
-            margin: 0;
-        }
-
-        .top-list li:not(:last-of-type) {
-            display: none;
-        }
-    }
-
-    .main {
-        flex-direction: column;
-        margin-top: 0;
-    }
-
-    .product {
-        width: 100%;
-        margin: 0 0 30px 0;
-    }
-
-    .goods-list {
-        li {
-            width: 100%;
-            padding: 0 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .goods-pic img {
-            width: 100%;
-        }
-
-        .detail {
-            .title {
-                padding: 14px 38px;
-            }
-
-            .price {
-                padding: 14px 25px;
-            }
-        }
-    }
-
-    .chang-page {
-        justify-content: center;
-        margin-top: 0;
-        margin-bottom: 1.5rem;
-    }
-
-    .mail {
-        flex-direction: column;
-        padding: 1.5rem;
-
-        .subscribe {
-            margin-top: 33px;
-
-            input[ type='email'] {
-                max-width: 251px;
-                font-size: 0.75rem;
-                padding-left: 58px;
-            }
-        }
-    }
-
-    .info {
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 39px 1.5rem 1.5rem;
-
-        .info-left {
-            img[alt='lg-dark'] {
-                width: 171px;
-                margin-bottom: 40px;
-            }
-
-            li:last-of-type {
-                margin-top: 37px;
-            }
-        }
-
-        .info-right {
-            justify-content: flex-start;
-
-            .info-right-title {
-                display: none;
-            }
-
-            .copyright {
-                font-size: 16px;
-                margin-top: 23px;
-            }
         }
     }
 }

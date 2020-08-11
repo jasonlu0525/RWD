@@ -7,7 +7,6 @@ body {
     margin: 0 auto;
 }
 
-
 header {
     position: sticky;
     top: 0;
@@ -18,26 +17,63 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    @include mobile-768 {
+        justify-content: space-around;
+
+    }
+
     .top-menu {
         display: none;
         flex-shrink: 0;
+
+        @include mobile-768 {
+            display: block;
+        }
     }
 
     .logo {
         width: 100%;
         padding-bottom: 5px;
+
+        @include mobile-768 {
+            width: 114px;
+            padding: 0;
+
+        }
+    }
+
+    .navbar {
+        @include mobile-768 {
+            position: absolute;
+            top: 74px;
+            height: 0;
+            width: 100%;
+            background-color: #fff;
+        }
+
+        .active {
+            max-height: 300px;
+        }
     }
 
     .top-list {
         display: flex;
         align-items: center;
+        margin-right: -200px;
+        transition: all 2s;
 
-        li {
-            &:last-of-type {
-                margin-left: 76px;
-                padding-left: 0;
-                flex-shrink: 0;
+        @include mobile-768 {
+            li {
+                width: 100%;
             }
+
+            overflow: hidden;
+            max-height: 0px;
+            margin-right: 0;
+            text-align: center;
+            flex-direction: column;
+            transition: all 2s;
+            padding-bottom: 0.5rem;
         }
 
         .top-list-a {
@@ -46,13 +82,48 @@ header {
             letter-spacing: 5px;
             padding: 0 30px 5px;
 
-            &:not(.top-list-cart):hover {
-                border-bottom: 5px solid $dark-green;
-                margin-bottom: -5px;
-                transition: all 200ms;
+            @include mobile-768 {
+                line-height: 44px;
+                padding: 0.5rem 0;
+                background-color: #fff;
+                &:last-of-type{
+                    padding-bottom: 1rem;
+                }
+
+                &:hover {
+                    @include dark-color_light-bg;
+                }
             }
         }
+    }
 
+    .top-list-cart {
+        margin-left: 79px;
 
+        @include mobile-768 {
+            margin-left: 0;
+        }
     }
 }
+
+
+// header {
+//     justify-content: space-around;
+
+//     .logo {
+//         width: 114px;
+//         padding: 0;
+//     }
+
+//     .top-menu {
+//         display: block;
+//     }
+
+//     .top-list li:last-of-type {
+//         margin: 0;
+//     }
+
+//     .top-list li:not(:last-of-type) {
+//         display: none;
+//     }
+// }

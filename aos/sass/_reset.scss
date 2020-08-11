@@ -149,14 +149,24 @@ img {
     display: block;
 }
 
+input {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:hover {
     -webkit-box-shadow: 0 0 0 1000px white inset;
     /* Change the color to your own background color */
     -webkit-text-fill-color: #000;
+
 }
 
-*ㄝ {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }

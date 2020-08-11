@@ -1,0 +1,264 @@
+@import "all";
+
+@mixin input {
+    padding: 19px 20px;
+    color: $font-8DA291;
+    background-color: $light-green;
+
+    @include mobile768-425 {
+        width: 100%;
+    }
+
+    @content
+}
+
+h2 {
+    font-size: $fz-Xlarge;
+    font-weight: $fw-b;
+}
+
+h4 {
+    font-size: $fz-medium;
+    font-weight: $fw-b;
+}
+
+h5 {
+    font-size: $fz-small;
+}
+
+.input-text-s {
+    width: 186px;
+    @include input;
+
+    @include mobile-375 {
+        width: 153px;
+    }
+}
+
+.input-text-l {
+    width: 380px;
+    @include input;
+
+    @include mobile-375 {
+        width: 315px;
+    }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: minmax(58.9743%, 100%) minmax(38.461%, 100%);
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    padding: 0 80px 0px;
+    margin-bottom: 65px;
+
+    @include mobile-768 {
+        grid-template-columns: 1fr;
+    }
+
+    @include pad-576 {
+        padding: 0;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    @include mobile-425 {
+        padding: 0;
+
+    }
+}
+
+.delivery {
+
+    background-color: $dark-green;
+
+    &-tittle {
+        color: $info-font;
+        padding: 30px 40px 0;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mobile-425 {
+            padding: 30px 30px 0;
+        }
+
+        @include mobile-320 {
+            padding: 30px 0 0;
+        }
+
+        .circle {
+            display: flex;
+            width: 166px;
+            justify-content: space-between;
+            align-items: center;
+            height: 0;
+            border-bottom: 1px solid $font-8DA291;
+
+
+            &-light {
+                background: url('../img/Check-circle.svg') no-repeat;
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+            }
+
+            &-dark {
+                width: 20px;
+                height: 20px;
+                background-color: $dark-green;
+                border-radius: 50%;
+                border: 1px solid $font-8DA291;
+            }
+        }
+    }
+
+    &-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 8px;
+        margin: 0 40px 0;
+
+        @include mobile-425 {
+            margin: 0 30px 0;
+        }
+
+        @include mobile-320 {
+            margin: 0;
+        }
+
+        lable {
+            color: $info-font;
+        }
+
+        lable::after {
+            content: "*";
+            color: red;
+            margin-left: 3px;
+
+        }
+
+        .input-text-grid {
+            justify-self: end;
+        }
+
+        .phone-number-label,
+        .address-label {
+            padding-top: 8px;
+        }
+
+        .phone-number-input {
+            grid-column: 1/-1;
+            justify-self: center;
+        }
+
+        .address-label {
+            grid-column: 1/-1;
+        }
+
+        .road {
+            grid-column: 1/-1;
+            justify-self: center;
+        }
+
+        .submit {
+
+            margin: 27px -40px 0;
+            grid-column: 1/-1;
+            font-size: $fz-large;
+            font-weight: $fw-b;
+            color: $dark-green;
+            padding: 17.5px 0;
+            @include submit;
+
+            @include mobile-425 {
+                margin-right: -30px;
+                margin-left: -30px;
+
+            }
+
+            @include mobile-320 {
+
+                margin: 27px 0 0 0;
+            }
+        }
+    }
+}
+
+.goods-info {
+    color: $font-8DA291;
+
+    @include mobile-768 {
+        display: none;
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .tbody {
+        outline: 1px solid $light-green;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        font-size: $fz-small;
+
+        &:first-of-type {
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+
+        &:last-of-type {
+            font-weight: $fw-b;
+            font-size: $fz-medium;
+            margin-bottom: 16px;
+            margin-top: 16px;
+
+        }
+    }
+
+    .ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 16px 18px 0px 20px;
+        outline: 1px solid $light-green;
+    }
+
+    .goods-tittle {
+        text-align: center;
+        background-color: $light-green;
+        font-size: $fz-large;
+        font-weight: $fw-b;
+        padding: 16px 0;
+        padding-right: 4px;
+    }
+
+    &-list {
+        display: flex;
+        margin-bottom: 16px;
+        align-items: center;
+        .product {
+            min-width: 120px;
+            height: 80px;
+        }
+        &-tittle {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+
+            h5 {
+                line-height: 1.5;
+            }
+        }
+    }
+}

@@ -4,36 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-     <!-- 修改區 -->
+    <!-- 修改區 -->
     <title> ...</title>
 
-    <link rel="stylesheet" href="css/ ...">
-     <!-- 修改區 -->
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- 修改區 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <div class="container">
         <header data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="top-top" data-aos-delay="500"
             data-aos-once="true">
-            <div class="top-menu"><img src="img//dehaze-24px.png" alt=""></div>
+            <div class="top-menu"><img src="img/dehaze-24px.png" alt=""></div>
 
             <picture>
-                <source media="(max-width: 375px)" srcset="img/logotype-sm-dark.svg">
-                <img src="img//logo-all-dark.svg" alt="logo" class="logo">
+                <source media="(max-width: 768px)" srcset="img/logotype-sm-dark.svg">
+                <img src="img/logo-all-dark.svg" alt="logo" class="logo">
             </picture>
-            <nav>
-                <ul class="top-list">
+            <nav class="navbar">
+                <ul class="top-list " id="top-list">
                     <li><a href="#" class="top-list-a">首頁</a></li>
                     <li><a href="#" class="top-list-a">甜點</a></li>
                     <li><a href="#" class="top-list-a">登入</a></li>
-                    <li>
-                        <a href="#" title="加入購物車" class="top-list-cart">
-                            <img src="img/shopping_cart.png" alt="cart">
-                        </a>
-                    </li>
                 </ul>
             </nav>
+            <a href="#" title="加入購物車" class="top-list-cart">
+                <img src="img/shopping_cart.png" alt="cart">
+            </a>
         </header>
+
 
 
         <!-- 修改區 -->
@@ -88,9 +88,9 @@
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script/ ..."></script>
+    <script src="script/">
+    </script>
 </body>
 
 </html>

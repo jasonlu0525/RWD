@@ -1,0 +1,65 @@
+@import"all";
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 39px;
+}
+
+.shopping {
+
+    width: 65.957%;
+
+    &>h2 {
+        padding: 20.5px 0;
+        background-color: $light-green;
+        font-size: $fz-large;
+        color: $dark-green;
+        font-weight: $fw-b;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    &-cart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+
+            &-tittle {
+                flex-shrink: 0;
+            }
+
+            .btn {
+                display: flex;
+                align-items: center;
+            }
+
+            .price {
+                flex-shrink: 0;
+            }
+
+
+        }
+
+
+        &-delete {
+            background: url('../img/delete_outline-black-18dp.svg') no-repeat;
+            background-size: contain;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.info {
+    width: 31.9148%;
+    display: flex;
+
+
+
+}

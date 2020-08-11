@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!-- 修改 -->
-    <title> ... </title>
-    <link rel="stylesheet" href="css/">
+    <title> 交易成功</title>
+    <link rel="stylesheet" href="css/banner.css">
 
     <!-- 修改 -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -33,11 +33,30 @@
                 <img src="img/shopping_cart.png" alt="cart">
             </a>
         </header>
-        <main>
+        <main class="main">
             <!--  banner 版型 -->
             <div class="banner" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-                <img src="img/banner.png" alt="banner" class="picture">
+                <div class="banner-inner">
+                    <div class="banner-inner-items">
+                        <ul class="inner-list">
+                            <li>
+                                <div class="inner-list-tick"></div>
+                            </li>
+                            <li>
+                                <div class="inner-list-tick"></div>
+                            </li>
+                            <li>
+                                <div class="inner-list-tick"></div>
+                            </li>
+                        </ul>
+                        <div alt="success" class="banner-inner-success"></div>
+                    </div>
+
+                    <a href="index.html" class="banner-inner-keep" rel="noopener noreferrer" data-aos="fade-down"
+                        data-aos-anchor-placement="top-bottom" data-aos-duration="800">繼續逛逛</a>
+                </div>
             </div>
+
             <!--  banner 版型 -->
         </main>
     </div>
@@ -88,9 +107,11 @@
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script/..."></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script/header.js"></script>
 </body>
 
 </html>
