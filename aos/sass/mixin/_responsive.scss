@@ -33,7 +33,11 @@
         @content;
     }
 }
-
+@mixin mobile425-375 {
+    @media only screen and (max-width:425px) and (min-width:375px) {
+        @content;
+    }
+}
 @mixin mobile-375 {
     @media only screen and (max-width:375px) {
         @content;

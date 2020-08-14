@@ -24,4 +24,16 @@
     border: none;
     outline: none;
     cursor: pointer;
+    transition: all 1s;
+    font-size: $fz-large;
+    font-weight: $fw-b;
+    color: $dark-green;
+    @content;
+
+    &:hover {
+        background-color: $dark-green;
+        color: $info-font;
+    }
+
+
 }

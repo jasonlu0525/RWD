@@ -158,6 +158,11 @@ input {
   font-size: 16px;
 }
 
+input:valid {
+  background-color: #fff;
+  color: black;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:hover {
@@ -171,6 +176,7 @@ input:-webkit-autofill:hover {
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  line-height: 1.2;
 }
 
 body {
@@ -430,6 +436,16 @@ header .top-list-cart {
   border: none;
   outline: none;
   cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3F5D45;
+}
+
+.mail .submit:hover {
+  background-color: #3F5D45;
+  color: #ffffff;
 }
 
 .info {
@@ -614,6 +630,7 @@ h5 {
   grid-auto-rows: auto;
   grid-gap: 20px;
   padding: 0 80px 0px;
+  margin-top: 30px;
   margin-bottom: 65px;
 }
 
@@ -621,6 +638,7 @@ h5 {
   .main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    margin-top: 0px;
   }
 }
 
@@ -761,16 +779,24 @@ h5 {
 }
 
 .delivery-info .submit {
-  margin: 27px -40px 0;
+  margin: 22px -40px 0;
   grid-column: 1/-1;
-  font-size: 24px;
-  font-weight: bold;
-  color: #3F5D45;
-  padding: 17.5px 0;
+  padding: 18.5px 0;
+  letter-spacing: 4px;
   background-color: #FFE180;
   border: none;
   outline: none;
   cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3F5D45;
+}
+
+.delivery-info .submit:hover {
+  background-color: #3F5D45;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 425px) {
@@ -858,11 +884,18 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .goods-info-list .product {
-  min-width: 120px;
-  height: 80px;
+  -ms-flex-preferred-size: 120px;
+      flex-basis: 120px;
+  margin: -36.72px 0px;
+  padding-bottom: 0.078px;
+}
+
+.goods-info-list:last-of-type > .product {
+  margin: 0;
 }
 
 .goods-info-list-tittle {

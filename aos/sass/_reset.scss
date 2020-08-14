@@ -156,6 +156,11 @@ input {
     font-size: 16px;
 }
 
+input:valid {
+    background-color: #fff;
+    color: black;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:hover {
@@ -169,4 +174,5 @@ input:-webkit-autofill:hover {
 *::before,
 *::after {
     box-sizing: border-box;
+    line-height: 1.2;
 }

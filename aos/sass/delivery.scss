@@ -51,10 +51,12 @@ h5 {
     grid-auto-rows: auto;
     grid-gap: 20px;
     padding: 0 80px 0px;
+    margin-top: 30px;
     margin-bottom: 65px;
 
     @include mobile-768 {
         grid-template-columns: 1fr;
+        margin-top: 0px;
     }
 
     @include pad-576 {
@@ -166,12 +168,10 @@ h5 {
 
         .submit {
 
-            margin: 27px -40px 0;
+            margin: 22px -40px 0;
             grid-column: 1/-1;
-            font-size: $fz-large;
-            font-weight: $fw-b;
-            color: $dark-green;
-            padding: 17.5px 0;
+            padding: 18.5px 0;
+            letter-spacing: 4px;
             @include submit;
 
             @include mobile-425 {
@@ -246,10 +246,18 @@ h5 {
         display: flex;
         margin-bottom: 16px;
         align-items: center;
+        overflow: hidden;
+
         .product {
-            min-width: 120px;
-            height: 80px;
+            flex-basis: 120px;
+            margin: -36.72px 0px;
+            padding-bottom: 0.078px;
         }
+
+        &:last-of-type>.product {
+            margin: 0;
+        }
+
         &-tittle {
             flex-shrink: 0;
             display: flex;

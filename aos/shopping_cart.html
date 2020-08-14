@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!-- 修改區 -->
-    <title> ...</title>
+    <title>購物車</title>
 
     <link rel="stylesheet" href="css/shopping_cart.css">
     <!-- 修改區 -->
@@ -17,11 +17,13 @@
         <header data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="top-top" data-aos-delay="500"
             data-aos-once="true">
             <div class="top-menu"><img src="img/dehaze-24px.png" alt=""></div>
+            <a href="index.html">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="img/logotype-sm-dark.svg">
+                    <img src="img/logo-all-dark.svg" alt="logo" class="logo">
+                </picture>
+            </a>
 
-            <picture>
-                <source media="(max-width: 768px)" srcset="img/logotype-sm-dark.svg">
-                <img src="img/logo-all-dark.svg" alt="logo" class="logo">
-            </picture>
             <nav class="navbar">
                 <ul class="top-list " id="top-list">
                     <li><a href="#" class="top-list-a">首頁</a></li>
@@ -29,65 +31,91 @@
                     <li><a href="#" class="top-list-a">登入</a></li>
                 </ul>
             </nav>
-            <a href="#" title="加入購物車" class="top-list-cart">
+            <a href="shopping_cart.html" title="加入購物車" class="top-list-cart">
                 <img src="img/shopping_cart.png" alt="cart">
             </a>
         </header>
         <!-- 修改區 -->
-        <main class="main">
+        <main class="main" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
 
-            <ul class="shopping ">
+            <ul class="shopping" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+                <h2>您的購物車</h2>
+                <li class="shopping-cart ">
+                    <div class="pic"><img src="img/p7.jpg" alt=""></div>
 
-                <li class="shopping-cart">
-                    <img src="img/p7.jpg" alt="">
                     <div class="shopping-cart-info">
                         <div class="shopping-cart-info-tittle">
                             <p>焦糖馬卡龍</p>
                             <p>NT$ 450</p>
                         </div>
                         <div class="btn">
-                            <button class="decrese">-</button>
+                            <button class="decrease">-</button>
                             <input type="text" value="2">
                             <button class="add">+</button>
                         </div>
                         <p class="price">NT$ 900</p>
                     </div>
+
                     <div class="shopping-cart-delete"></div>
                 </li>
+                <hr class="hr hr-rwd">
+                <div class="horizen-rwd">
+
+                    <p class=" price-rwd">NT$ 900</p>
+                </div>
+                <hr class="hr">
                 <li class="shopping-cart">
-                    <img src="img/p7.jpg" alt="">
+                    <div class="pic"><img src="img/p7.jpg" alt=""></div>
+
                     <div class="shopping-cart-info">
                         <div class="shopping-cart-info-tittle">
                             <p>焦糖馬卡龍</p>
                             <p>NT$ 450</p>
                         </div>
                         <div class="btn">
-                            <button class="decrese">-</button>
+                            <button class="decrease">-</button>
                             <input type="text" value="2">
                             <button class="add">+</button>
                         </div>
-                        <p>NT$ 900</p>
+                        <p class="price">NT$ 900</p>
                     </div>
+
                     <div class="shopping-cart-delete"></div>
                 </li>
+                <hr class="hr hr-rwd">
+                <div class="horizen-rwd">
+
+                    <p class=" price-rwd">NT$ 900</p>
+                </div>
+                <hr class="hr">
                 <li class="shopping-cart">
-                    <img src="img/p7.jpg" alt="">
+                    <div class="pic"><img src="img/p7.jpg" alt=""></div>
+
                     <div class="shopping-cart-info">
                         <div class="shopping-cart-info-tittle">
                             <p>焦糖馬卡龍</p>
                             <p>NT$ 450</p>
                         </div>
-                        <div>
-                            <button class="decrese">-</button>
+                        <div class="btn">
+                            <button class="decrease">-</button>
                             <input type="text" value="2">
                             <button class="add">+</button>
                         </div>
-                        <p>NT$ 900</p>
+                        <p class="price">NT$ 900</p>
                     </div>
+
                     <div class="shopping-cart-delete"></div>
                 </li>
+                <hr class="hr hr-rwd">
+                <div class="horizen-rwd">
+
+                    <p class=" price-rwd">NT$ 900</p>
+                </div>
+                <hr class="hr">
+
             </ul>
-            <ul class="shopping-info">
+            <ul class="shopping-info" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1"
+                data-aos-offset="1">
                 <h2>訂單摘要</h2>
                 <li>
                     <p>小計</p>
@@ -97,50 +125,21 @@
                     <p>運費</p>
                     <p>NT$ 300</p>
 
-                <li>
+                <li class="total">
                     <p>總計</p>
                     <p>NT$ 3,000</p>
 
                 </li>
                 <a href="delivery.html">結帳</a>
+
             </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </main>
         <!-- 修改區 -->
     </div>
     <footer data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
-
         <div class="footer-bg-dark ">
             <div class="container mail ">
-                <a href="#" class="sweet-mail">
+                <a href="index.html" class="sweet-mail">
                     <img src="img/logo-light.svg" alt="icon-small">
                     <h3 class="mail-title">訂閱你我的甜蜜郵件</h3>
                 </a>
@@ -183,6 +182,7 @@
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/header.js"></script>
     <script>
         AOS.init();
     </script>
