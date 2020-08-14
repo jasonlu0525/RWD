@@ -799,6 +799,11 @@ main {
   color: #3F5D45;
 }
 
+.chang-page a:not(.arrow) {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 .chang-page a:not(.arrow):hover {
   background: #3F5D45;
   color: #ffffff;
