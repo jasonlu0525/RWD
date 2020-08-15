@@ -85,24 +85,16 @@
         }
     }
 
-    &>h2 {
-        padding: 20.5px 0;
+    &>h3 {
+        padding: 18.5px 0;
         background-color: $light-green;
-        font-size: $fz-large;
         color: $dark-green;
-        font-weight: $fw-b;
-        text-align: center;
-        line-height: 1.5;
         margin-bottom: 33px;
         transition: all 1s;
+        @include hover;
 
         @include mobile-768 {
             width: 100%;
-        }
-
-        &:hover {
-            background-color: $dark-green;
-            color: $info-font;
         }
     }
 
@@ -181,13 +173,20 @@
 
             &-tittle {
 
-                &>p:first-of-type {
-                    margin-bottom: 14px;
+                &>h4 {
+                    margin-bottom: 3px;
+
+                    @include mobile-425 {
+                        margin-bottom: 0;
+                    }
                 }
 
-                &>p:last-of-type {
-                    font-size: $fz-small;
-                    margin-bottom: 8px;
+                &>h5 {
+                    text-align: left;
+
+                    @include mobile-425 {
+                        margin-bottom: 8px;
+                    }
                 }
             }
 
@@ -222,7 +221,7 @@
     width: 31.9148%;
     display: flex;
     flex-direction: column;
-    padding: 20.5px 20px 16px;
+    padding: 18.5px 20px 16px;
     background-color: $dark-green;
     color: $info-font;
     position: relative;
@@ -233,13 +232,11 @@
 
     }
 
-    &>h2 {
+    &>h3 {
         text-align: center;
-        font-size: $fz-large;
         color: $info-font;
-        font-weight: $fw-b;
         border-bottom: 1px solid $info-font;
-        padding-bottom: 16px;
+        padding-bottom: 17.5px;
         margin-bottom: 16px;
 
     }
@@ -254,7 +251,7 @@
         }
 
         &.total {
-            margin-top: 16px;
+            margin-top: 8px;
         }
 
         &:not(.total) {

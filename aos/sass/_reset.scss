@@ -179,3 +179,22 @@ input:-webkit-autofill:hover {
     box-sizing: border-box;
     line-height: 1.2;
 }
+h2,h3,h4,h5{
+    font-weight: $fw-b;
+    text-align: center;
+}
+h2 {
+    font-size: $fz-Xlarge;
+}
+
+h3 {
+    font-size: $fz-large;
+}
+
+h4 {
+    font-size: $fz-medium;
+}
+
+h5 {
+    font-size: $fz-small;
+}

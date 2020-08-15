@@ -1,19 +1,5 @@
 @import "all";
 
-h2 {
-    font-size: $fz-Xlarge;
-    font-weight: $fw-b;
-}
-
-h4 {
-    font-size: $fz-medium;
-    font-weight: $fw-b;
-}
-
-h5 {
-    font-size: $fz-small;
-}
-
 .input-text-s {
     width: 186px;
     @include input;
@@ -215,9 +201,8 @@ h5 {
     .goods-tittle {
         text-align: center;
         background-color: $light-green;
-        font-size: $fz-large;
-        font-weight: $fw-b;
-        padding: 16px 4px 16px 0;;
+        padding: 18.5px 4px 18.5px 0;
+        ;
     }
 
     &-list {
@@ -228,7 +213,7 @@ h5 {
 
         .product {
             flex-basis: 120px;
-            margin: -36.72px 0px;
+            margin: -33.5px 0px;
             padding-bottom: 0.078px;
         }
 
@@ -241,6 +226,10 @@ h5 {
             display: flex;
             flex-direction: column;
             margin-left: 20px;
+
+            h4 {
+                text-align-last: left;
+            }
 
             h5 {
                 line-height: 1.5;

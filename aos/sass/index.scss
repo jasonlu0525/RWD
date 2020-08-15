@@ -17,8 +17,6 @@ main {
 .product {
     width: 31.914894%;
     margin-right: 20px;
-    font-size: $fz-large;
-    font-weight: $fw-b;
     text-align: center;
     color: $dark-green;
     line-height: 2rem;
@@ -29,7 +27,7 @@ main {
         margin: 0 0 30px 0;
     }
 
-    h2 {
+   &-tittle {
         padding: $padding-horizontal-product_menu 0;
         background: $dark-green;
         color: $info-font;

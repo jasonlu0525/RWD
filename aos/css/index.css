@@ -140,6 +140,10 @@ table {
    v2.0 | 20110126
    License: none (public domain)
 */
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
 a {
   display: block;
   text-decoration: none;
@@ -179,8 +183,25 @@ input:-webkit-autofill:hover {
   line-height: 1.2;
 }
 
-body {
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+h2, h3, h4, h5 {
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
 }
 
 .container {
@@ -585,8 +606,6 @@ main {
 .product {
   width: 31.914894%;
   margin-right: 20px;
-  font-size: 24px;
-  font-weight: bold;
   text-align: center;
   color: #3F5D45;
   line-height: 2rem;
@@ -601,7 +620,7 @@ main {
   }
 }
 
-.product h2 {
+.product-tittle {
   padding: 16px 0;
   background: #3F5D45;
   color: #ffffff;
@@ -739,7 +758,7 @@ main {
 
 .goods-list .add-cart:hover {
   background-color: #3F5D45;
-  color: #ffffff;
+  color: #FFE180;
 }
 
 .chang-page {
@@ -801,6 +820,6 @@ main {
 
 .chang-page a:not(.arrow):hover {
   background-color: #3F5D45;
-  color: #ffffff;
+  color: #FFE180;
 }
 /*# sourceMappingURL=index.css.map */
