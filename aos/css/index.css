@@ -714,7 +714,7 @@ main {
   }
 }
 
-.goods-list .detail .title .price {
+.goods-list .detail .price {
   padding: 0 20px 0 25px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -725,7 +725,7 @@ main {
 }
 
 @media only screen and (max-width: 576px) {
-  .goods-list .detail .title .price {
+  .goods-list .detail .price {
     padding: 14px 25.4px 14px 25.95px;
   }
 }

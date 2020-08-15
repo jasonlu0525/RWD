@@ -62,10 +62,12 @@
             display: block;
             margin: 8.5px 2.171rem 0;
         }
+
         @include mobile-375 {
             display: block;
             margin: 8.5px 1.5rem 0;
         }
+
         @include mobile-320 {
             margin: 8.5px 0;
         }

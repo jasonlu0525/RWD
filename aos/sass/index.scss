@@ -115,16 +115,16 @@ main {
             @include pad-576 {
                 padding: 14px 38px;
             }
+        }
 
-            .price {
-                padding: 0 20px 0 25px;
-                flex-shrink: 0;
-                flex-grow: 1;
-                text-align: center;
+        .price {
+            padding: 0 20px 0 25px;
+            flex-shrink: 0;
+            flex-grow: 1;
+            text-align: center;
 
-                @include pad-576 {
-                    padding: 14px 25.4px 14px 25.95px;
-                }
+            @include pad-576 {
+                padding: 14px 25.4px 14px 25.95px;
             }
         }
     }
@@ -187,7 +187,6 @@ main {
                 background: $dark-green;
                 color: $info-font;
             }
-
         }
     }
 }

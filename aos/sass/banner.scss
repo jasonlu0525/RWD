@@ -33,7 +33,7 @@
         &-keep {
             padding: 18.5px 100px;
             text-align: center;
-            transition: all 1s ; 
+            transition: all 1s;
             @include submit;
 
             @include mobile-768 {
