@@ -29,11 +29,10 @@
     font-weight: $fw-b;
     color: $dark-green;
     @content;
-
+}
+@mixin submit-hover {
     &:hover {
         background-color: $dark-green;
         color: $info-font;
     }
-
-
 }

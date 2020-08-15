@@ -35,7 +35,7 @@
             text-align: center;
             transition: all 1s;
             @include submit;
-
+            @include submit-hover;
             @include mobile-768 {
                 position: absolute;
                 top: 100%;

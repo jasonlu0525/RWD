@@ -443,11 +443,6 @@ header .top-list-cart {
   color: #3F5D45;
 }
 
-.mail .submit:hover {
-  background-color: #3F5D45;
-  color: #ffffff;
-}
-
 .info {
   display: -webkit-box;
   display: -ms-flexbox;

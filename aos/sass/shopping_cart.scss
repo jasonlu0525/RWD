@@ -277,5 +277,6 @@
         padding: 18.5px 0;
         width: 100%;
         @include submit;
+        @include submit-hover;
     }
 }
