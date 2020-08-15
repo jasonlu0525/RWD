@@ -36,19 +36,17 @@
             transition: all 1s;
             @include submit;
             @include submit-hover;
+
             @include mobile-768 {
                 position: absolute;
                 top: 100%;
                 width: 100%;
             }
-
-
         }
-
 
         &-success {
             margin-bottom: 52px;
-            background: url(../img/lg-付款成功.svg);
+            background: url('../img/lg-付款成功.svg');
             width: 189px;
             height: 45px;
         }
@@ -57,10 +55,10 @@
     .inner-list {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 42px;
+        width: 100%;
         height: 0px;
         border-bottom: 1px solid $dark-green;
-        width: 100%;
+        margin-bottom: 42px;
         padding-bottom: 10px;
 
         &-tick {

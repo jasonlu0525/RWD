@@ -24,7 +24,6 @@ main {
     line-height: 2rem;
     flex-shrink: 0;
 
-
     @include mobile-768 {
         width: 100%;
         margin: 0 0 30px 0;
@@ -132,15 +131,14 @@ main {
     .add-cart {
         text-align: center;
         padding: $padding-horizontal-product_menu 0;
-        @include dark-color_light-bg();
+
         font-weight: $fw-b;
         font-size: 24px;
         line-height: 33px;
+        @include dark-color_light-bg();
 
-        &:hover {
-            @include dark-color_light-bg($info-font, $dark-green) {
-                transition: all 1s;
-            }
+        @include hover {
+            transition: all 1s;
         }
     }
 }
@@ -182,11 +180,7 @@ main {
 
         &:not(.arrow) {
             transition: all 1s;
-
-            &:hover {
-                background: $dark-green;
-                color: $info-font;
-            }
+            @include hover;
         }
     }
 }

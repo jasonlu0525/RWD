@@ -728,18 +728,18 @@ main {
 .goods-list .add-cart {
   text-align: center;
   padding: 16px 0;
-  color: #3F5D45;
-  background: #EAF0ED;
   font-weight: bold;
   font-size: 24px;
   line-height: 33px;
+  color: #3F5D45;
+  background: #EAF0ED;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .goods-list .add-cart:hover {
+  background-color: #3F5D45;
   color: #ffffff;
-  background: #3F5D45;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .chang-page {
@@ -800,7 +800,7 @@ main {
 }
 
 .chang-page a:not(.arrow):hover {
-  background: #3F5D45;
+  background-color: #3F5D45;
   color: #ffffff;
 }
 /*# sourceMappingURL=index.css.map */

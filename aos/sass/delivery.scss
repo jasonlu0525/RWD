@@ -1,17 +1,5 @@
 @import "all";
 
-@mixin input {
-    padding: 19px 20px;
-    color: $font-8DA291;
-    background-color: $light-green;
-
-    @include mobile768-425 {
-        width: 100%;
-    }
-
-    @content
-}
-
 h2 {
     font-size: $fz-Xlarge;
     font-weight: $fw-b;
@@ -47,12 +35,9 @@ h5 {
 .main {
     display: grid;
     grid-template-columns: minmax(58.9743%, 100%) minmax(38.461%, 100%);
-    grid-template-rows: auto;
-    grid-auto-rows: auto;
     grid-gap: 20px;
     padding: 0 80px 0px;
-    margin-top: 30px;
-    margin-bottom: 65px;
+    margin: 30px 0 65px;
 
     @include mobile-768 {
         grid-template-columns: 1fr;
@@ -61,18 +46,17 @@ h5 {
 
     @include pad-576 {
         padding: 0;
-        justify-content: center;
         margin-bottom: 0;
+        justify-content: center;
+
     }
 
     @include mobile-425 {
         padding: 0;
-
     }
 }
 
 .delivery {
-
     background-color: $dark-green;
 
     &-tittle {
@@ -94,22 +78,22 @@ h5 {
         .circle {
             display: flex;
             width: 166px;
+            height: 0;
             justify-content: space-between;
             align-items: center;
-            height: 0;
             border-bottom: 1px solid $font-8DA291;
 
+            &-setting {
+                width: 20px;
+                height: 20px;
+            }
 
             &-light {
                 background: url('../img/Check-circle.svg') no-repeat;
-                width: 20px;
-                height: 20px;
                 background-size: contain;
             }
 
             &-dark {
-                width: 20px;
-                height: 20px;
                 background-color: $dark-green;
                 border-radius: 50%;
                 border: 1px solid $font-8DA291;
@@ -120,7 +104,6 @@ h5 {
     &-info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
         grid-gap: 8px;
         margin: 0 40px 0;
 
@@ -132,16 +115,16 @@ h5 {
             margin: 0;
         }
 
-        lable {
+        &-lable {
             color: $info-font;
+
+            &::after {
+                content: "*";
+                color: red;
+                margin-left: 3px;
+            }
         }
 
-        lable::after {
-            content: "*";
-            color: red;
-            margin-left: 3px;
-
-        }
 
         .input-text-grid {
             justify-self: end;
@@ -167,17 +150,16 @@ h5 {
         }
 
         .submit {
-
-            margin: 22px -40px 0;
             grid-column: 1/-1;
+            margin: 22px -40px 0;
             padding: 18.5px 0;
             letter-spacing: 4px;
             @include submit;
-            @include submit-hover;
+            @include hover;
+
             @include mobile-425 {
                 margin-right: -30px;
                 margin-left: -30px;
-
             }
 
             @include mobile-320 {
@@ -212,16 +194,13 @@ h5 {
         font-size: $fz-small;
 
         &:first-of-type {
-            margin-top: 16px;
-            margin-bottom: 8px;
+            margin: 16px 0 8px;
         }
 
         &:last-of-type {
             font-weight: $fw-b;
             font-size: $fz-medium;
-            margin-bottom: 16px;
-            margin-top: 16px;
-
+            margin: 16px 0 16px;
         }
     }
 
@@ -238,8 +217,7 @@ h5 {
         background-color: $light-green;
         font-size: $fz-large;
         font-weight: $fw-b;
-        padding: 16px 0;
-        padding-right: 4px;
+        padding: 16px 4px 16px 0;;
     }
 
     &-list {

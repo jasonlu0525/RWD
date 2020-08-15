@@ -41,22 +41,22 @@
                 <div class="delivery-tittle">
                     <h2>運送</h2>
                     <div class="circle">
-                        <div class="circle-light"></div>
-                        <div class="circle-dark"></div>
-                        <div class="circle-dark"> </div>
+                        <div class="circle-light circle-setting"></div>
+                        <div class="circle-dark  circle-setting"></div>
+                        <div class="circle-dark  circle-setting"> </div>
                     </div>
                 </div>
                 <form action="banner.html" class="delivery-info">
-                    <lable for="Last-Name" class="Last-Name-lable">姓氏</lable>
-                    <lable for="First-Name">名字</lable>
+                    <lable for="Last-Name" class="Last-Name-lable  delivery-info-lable">姓氏</lable>
+                    <lable for="First-Name " class="delivery-info-lable">名字</lable>
                     <input type="text" name="Last-Name" id="Last-Name" class="input-text-grid input-text-s "
                         placeholder="請輸入姓氏" required autocomplete="off">
                     <input type="text" name="First-Name" id="" class="input-text-s " placeholder="請輸入名字" required
                         autocomplete="off">
-                    <lable for="tel" class="phone-number-label ">電話</lable>
+                    <lable for="tel" class="phone-number-label delivery-info-lable ">電話</lable>
                     <input type="tel" class="phone-number-input input-text-l " name="Phone-Number" id="tel"
                         placeholder="+886" required autocomplete="off">
-                    <lable for="county" class="address-label ">地址 </lable>
+                    <lable for="county" class="address-label delivery-info-lable">地址 </lable>
                     <input id="county" list="countytw" name="county" class=" input-text-grid input-text-s "
                         placeholder="縣市" required autocomplete="off" />
                     <datalist id="countytw">
@@ -182,7 +182,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script/header.js"></script>
-    <script >
+    <script>
         $(function () {
             AOS.init();
         });

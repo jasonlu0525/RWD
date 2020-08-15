@@ -620,13 +620,9 @@ h5 {
   display: grid;
   -ms-grid-columns: minmax(58.9743%, 100%) minmax(38.461%, 100%);
       grid-template-columns: minmax(58.9743%, 100%) minmax(38.461%, 100%);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  grid-auto-rows: auto;
   grid-gap: 20px;
   padding: 0 80px 0px;
-  margin-top: 30px;
-  margin-bottom: 65px;
+  margin: 30px 0 65px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -640,10 +636,10 @@ h5 {
 @media only screen and (max-width: 576px) {
   .main {
     padding: 0;
+    margin-bottom: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 0;
   }
 }
 
@@ -689,26 +685,27 @@ h5 {
   display: -ms-flexbox;
   display: flex;
   width: 166px;
+  height: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 0;
   border-bottom: 1px solid #8DA291;
+}
+
+.delivery-tittle .circle-setting {
+  width: 20px;
+  height: 20px;
 }
 
 .delivery-tittle .circle-light {
   background: url("../img/Check-circle.svg") no-repeat;
-  width: 20px;
-  height: 20px;
   background-size: contain;
 }
 
 .delivery-tittle .circle-dark {
-  width: 20px;
-  height: 20px;
   background-color: #3F5D45;
   border-radius: 50%;
   border: 1px solid #8DA291;
@@ -719,8 +716,6 @@ h5 {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
   grid-gap: 8px;
   margin: 0 40px 0;
 }
@@ -737,11 +732,11 @@ h5 {
   }
 }
 
-.delivery-info lable {
+.delivery-info-lable {
   color: #ffffff;
 }
 
-.delivery-info lable::after {
+.delivery-info-lable::after {
   content: "*";
   color: red;
   margin-left: 3px;
@@ -774,8 +769,8 @@ h5 {
 }
 
 .delivery-info .submit {
-  margin: 22px -40px 0;
   grid-column: 1/-1;
+  margin: 22px -40px 0;
   padding: 18.5px 0;
   letter-spacing: 4px;
   background-color: #FFE180;
@@ -838,15 +833,13 @@ h5 {
 }
 
 .goods-info .row:first-of-type {
-  margin-top: 16px;
-  margin-bottom: 8px;
+  margin: 16px 0 8px;
 }
 
 .goods-info .row:last-of-type {
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 16px;
-  margin-top: 16px;
+  margin: 16px 0 16px;
 }
 
 .goods-info .ul {
@@ -867,8 +860,7 @@ h5 {
   background-color: #EAF0ED;
   font-size: 24px;
   font-weight: bold;
-  padding: 16px 0;
-  padding-right: 4px;
+  padding: 16px 4px 16px 0;
 }
 
 .goods-info-list {
