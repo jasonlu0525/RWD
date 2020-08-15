@@ -50,14 +50,15 @@
                     <lable for="Last-Name" class="Last-Name-lable">姓氏</lable>
                     <lable for="First-Name">名字</lable>
                     <input type="text" name="Last-Name" id="Last-Name" class="input-text-grid input-text-s "
-                        placeholder="請輸入姓氏" required>
-                    <input type="text" name="First-Name" id="" class="input-text-s " placeholder="請輸入名字" required>
+                        placeholder="請輸入姓氏" required autocomplete="off">
+                    <input type="text" name="First-Name" id="" class="input-text-s " placeholder="請輸入名字" required
+                        autocomplete="off">
                     <lable for="tel" class="phone-number-label ">電話</lable>
                     <input type="tel" class="phone-number-input input-text-l " name="Phone-Number" id="tel"
-                        placeholder="+886" required>
+                        placeholder="+886" required autocomplete="off">
                     <lable for="county" class="address-label ">地址 </lable>
                     <input id="county" list="countytw" name="county" class=" input-text-grid input-text-s "
-                        placeholder="縣市" required />
+                        placeholder="縣市" required autocomplete="off" />
                     <datalist id="countytw">
                         <option value="台北市">
                         <option value="新北市">
@@ -83,11 +84,13 @@
                         <option value="連江縣">
                         <option value="連江縣">
                     </datalist>
-                    <input list="county-area" name="area" class="input-text-s " placeholder="鄉鎮區" required>
+                    <input list="county-area" name="area" class="input-text-s " placeholder="鄉鎮區" required
+                        autocomplete="off">
                     <datalist id="county-area">
                         <option value="OO區">
                     </datalist>
-                    <input type="text" name="road" class="road input-text-l " placeholder="街路巷弄號樓" required>
+                    <input type="text" name="road" class="road input-text-l " placeholder="街路巷弄號樓" required
+                        autocomplete="off">
                     <input type="submit" value="下一步" class="submit">
                 </form>
             </section>
@@ -108,11 +111,9 @@
                             <th>NT$ 3,000</th>
                         </tr>
                     </tbody>
-
                 </table>
                 <h3 class="goods-tittle">購物清單</h3>
                 <ul class="ul">
-
                     <li class="goods-info-list">
                         <div class="product"><img src="https://bit.ly/2QvsT63" alt="product"></div>
                         <div class="goods-info-list-tittle">
@@ -129,22 +130,17 @@
                     </li>
                     <li class="goods-info-list">
                         <div class="product"><img src="https://bit.ly/2zKOP7w" alt="product"></div>
-
                         <div class="goods-info-list-tittle">
                             <h5>焦糖馬卡龍（2）</h5>
                             <h4>NT$ 900</h4>
                         </div>
-
                     </li>
                 </ul>
             </section>
-
-
         </main>
         <!-- 修改區 -->
     </div>
     <footer data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
-
         <div class="footer-bg-dark ">
             <div class="container mail ">
                 <a href="index.html" class="sweet-mail">
@@ -153,16 +149,11 @@
                 </a>
                 <form class="subscribe " action="index.html">
                     <img src="img/mail-24px.png" alt="" class="ic-email">
-                    <input type="email" name="email" placeholder="請輸入EMAIL" required></input>
-
-                    <input type="submit" value=" " class="submit"></input>
-
+                    <input type="email" name="email" placeholder="請輸入EMAIL" required autocomplete="off">
+                    <input type="submit" value=" " class="submit">
                 </form>
             </div>
-
-
         </div>
-
         <div class="footer-bg-light">
             <div class="container info">
                 <div class="info-left">
@@ -188,11 +179,14 @@
 
         </div>
     </footer>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script/header.js"></script>
-    <script src="script/delivery.js"></script>
+    <script >
+        $(function () {
+            AOS.init();
+        });
+    </script>
 </body>
 
 </html>

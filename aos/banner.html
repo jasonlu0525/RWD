@@ -66,8 +66,8 @@
                 </a>
                 <form class="subscribe " action="index.html">
                     <img src="img/mail-24px.png" alt="" class="ic-email">
-                    <input type="email" name="email" placeholder="請輸入EMAIL" required></input>
-                    <input type="submit" value=" " class="submit"></input>
+                    <input type="email" name="email" placeholder="請輸入EMAIL" required autocomplete="off">
+                    <input type="submit" value=" " class="submit">
                 </form>
             </div>
         </div>
@@ -93,16 +93,15 @@
                     </p>
                 </div>
             </div>
-
         </div>
     </footer>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <script src="script/header.js"></script>
+    <script>
+        $(function () {
+            AOS.init();
+        });
+    </script>
 </body>
-
 </html>
