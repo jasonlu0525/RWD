@@ -1,0 +1,75 @@
+//[交易成功頁]
+
+.success{
+    .banner {
+        margin-bottom: 60px;
+        background: url('../img/banner.jpg') no-repeat;
+        background-position: 0 -80px;
+        background-size: cover;
+        height: 460px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile-768 {
+            height: 518px;
+            margin-bottom: 65px;
+            background-position: 0;
+            position: relative;
+        }
+
+        @include mobile-425 {
+            background-position: -180px 0;
+        }
+
+        @include mobile-375 {
+            background-position: -190px 0;
+        }
+
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-keep {
+                padding: 18.5px 100px;
+                text-align: center;
+                transition: all 1s;
+                @include submit;
+                @include hover;
+
+                @include mobile-768 {
+                    position: absolute;
+                    top: 100%;
+                    width: 100%;
+                }
+            }
+
+            &-success {
+                margin-bottom: 52px;
+                background: url('../img/lg-付款成功.svg');
+                width: 189px;
+                height: 45px;
+            }
+        }
+
+        .inner-list {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 0px;
+            border-bottom: 1px solid $dark-green;
+            margin-bottom: 42px;
+            padding-bottom: 10px;
+
+            &-tick {
+                background: url('../img/Check.svg');
+                background-size: contain;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+//[交易成功頁]

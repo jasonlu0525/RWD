@@ -1,0 +1,38 @@
+@mixin dark-color_light-bg($dark:$dark-green, $light:$light-green) {
+    color: $dark;
+    background: $light;
+    @content
+}
+
+
+@mixin padding-0-1rem {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+    @content;
+}
+
+@mixin padding-0-05rem {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 0;
+    @content;
+}
+
+@mixin submit {
+    background-color: $accent-color;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 1s;
+    font-size: $fz-large;
+    font-weight: $fw-b;
+    color: $dark-green;
+    @content;
+}
+@mixin submit-hover {
+    &:hover {
+        background-color: $dark-green;
+        color: $info-font;
+    }
+}
