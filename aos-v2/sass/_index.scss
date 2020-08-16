@@ -1,0 +1,190 @@
+//首頁
+
+.index {
+    margin-bottom: 3rem;
+
+    .main {
+        display: flex;
+        margin-top: 3rem;
+
+        @include mobile-768 {
+            flex-wrap: wrap;
+            margin-top: 0;
+        }
+    }
+
+    .product {
+        width: 31.914894%;
+        margin-right: 20px;
+        text-align: center;
+        color: $dark-green;
+        line-height: 2rem;
+        flex-shrink: 0;
+
+        @include mobile-768 {
+            width: 100%;
+            margin: 0 0 30px 0;
+        }
+
+        &-tittle {
+            padding: $padding-horizontal-product_menu 0;
+            background: $dark-green;
+            color: $info-font;
+        }
+
+        .product-menu a {
+            padding: $padding-horizontal-product_menu;
+            @include dark-color_light-bg($light:$info-font);
+            outline: 1px solid;
+            outline-color: $light-green;
+
+            &:hover {
+                @include dark-color_light-bg() {
+                    transition: linear 500ms;
+                }
+            }
+        }
+
+    }
+
+    .goods-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        width: 66%;
+
+        @include mobile-768 {
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        li {
+            @include mobile-425 {
+                margin-bottom: 1.5rem;
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .goods-pic {
+            position: relative;
+
+            @include mobile-768 {
+                img {
+                    width: 100%;
+                }
+            }
+
+
+        }
+
+        .suggest {
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            color: $info-font;
+            background: $dark-green;
+            padding: $padding-suggest;
+            writing-mode: vertical-rl;
+            line-height: 20px;
+        }
+
+        .heart {
+            position: absolute;
+            right: 22px;
+            top: 19px;
+        }
+
+        .detail {
+            display: flex;
+            align-items: center;
+            color: $dark-green;
+            border: 1px solid $light-green;
+
+
+        }
+
+        .title {
+            padding: 14px 33px;
+            border-right: 1px solid $light-green;
+            flex-grow: 2;
+            text-align: center;
+
+            @include pad-576 {
+                padding: 14px 38px;
+            }
+        }
+
+        .price {
+            padding: 0 20px 0 25px;
+            flex-shrink: 0;
+            flex-grow: 1;
+            text-align: center;
+
+            @include pad-576 {
+                padding: 14px 25.4px 14px 25.95px;
+            }
+        }
+
+        .add-cart {
+            text-align: center;
+            padding: $padding-horizontal-product_menu 0;
+
+            font-weight: $fw-b;
+            font-size: 24px;
+            line-height: 33px;
+            @include dark-color_light-bg();
+
+            @include hover {
+                transition: all 1s;
+            }
+        }
+    }
+
+    .chang-page {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+
+        @include mobile-768 {
+            margin-right: 56px;
+        }
+
+        @include mobile-425 {
+            justify-content: center;
+            margin-right: 0;
+        }
+
+        @include mobile-375 {
+            justify-content: center;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            outline: 1px solid $light-green;
+            flex-shrink: 0;
+
+            .arrow {
+                padding: 18px;
+            }
+        }
+
+        a {
+            padding: 16px 26px;
+            line-height: 28px;
+            font-size: $fz-medium;
+            color: $dark-green;
+
+            &:not(.arrow) {
+                transition: all 1s;
+                @include hover;
+            }
+        }
+    }
+}
+
+//首頁

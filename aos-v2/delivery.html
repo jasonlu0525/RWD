@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- 修改區 -->
+    <title>運送貨物</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- 修改區 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header" data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="top-top"
+            data-aos-delay="500" data-aos-once="true">
+            <div class="top-menu"><img src="img/dehaze-24px.png" alt=""></div>
+            <a href="index.html">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="img/logotype-sm-dark.svg">
+                    <img src="img/logo-all-dark.svg" alt="logo" class="logo">
+                </picture>
+            </a>
+
+            <nav class="navbar">
+                <ul class="top-list " id="top-list">
+                    <li><a href="#" class="top-list-a">首頁</a></li>
+                    <li><a href="#" class="top-list-a">甜點</a></li>
+                    <li><a href="#" class="top-list-a">登入</a></li>
+                </ul>
+            </nav>
+            <a href="shopping_cart.html" title="加入購物車" class="top-list-cart">
+                <img src="img/shopping_cart.png" alt="cart">
+            </a>
+        </header>
+        <!-- 修改區 -->
+        <main class="transport" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+            <section class="delivery">
+                <div class="delivery-tittle">
+                    <h2>運送</h2>
+                    <div class="circle">
+                        <div class="circle-light circle-setting"></div>
+                        <div class="circle-dark  circle-setting"></div>
+                        <div class="circle-dark  circle-setting"> </div>
+                    </div>
+                </div>
+                <form action="success.html" class="delivery-info">
+                    <lable for="Last-Name" class="Last-Name-lable  delivery-info-lable">姓氏</lable>
+                    <lable for="First-Name " class="delivery-info-lable">名字</lable>
+                    <input type="text" name="Last-Name" id="Last-Name" class="input-text-grid input-text-s "
+                        placeholder="請輸入姓氏" required autocomplete="off">
+                    <input type="text" name="First-Name" id="" class="input-text-s " placeholder="請輸入名字" required
+                        autocomplete="off">
+                    <lable for="tel" class="phone-number-label delivery-info-lable ">電話</lable>
+                    <input type="tel" class="phone-number-input input-text-l " name="Phone-Number" id="tel"
+                        placeholder="+886" required autocomplete="off">
+                    <lable for="county" class="address-label delivery-info-lable">地址 </lable>
+                    <input id="county" list="countytw" name="county" class=" input-text-grid input-text-s "
+                        placeholder="縣市" required autocomplete="off" />
+                    <datalist id="countytw">
+                        <option value="台北市">
+                        <option value="新北市">
+                        <option value="桃園市">
+                        <option value="台中市">
+                        <option value="台南市">
+                        <option value="高雄市">
+                        <option value="基隆市">
+                        <option value="宜蘭縣">
+                        <option value="花蓮縣">
+                        <option value="台東縣">
+                        <option value="屏東縣">
+                        <option value="嘉義縣">
+                        <option value="嘉義市">
+                        <option value="雲林縣">
+                        <option value="新竹縣">
+                        <option value="新竹市">
+                        <option value="苗栗縣">
+                        <option value="南投縣">
+                        <option value="彰化縣">
+                        <option value="金門縣">
+                        <option value="澎湖縣">
+                        <option value="連江縣">
+                        <option value="連江縣">
+                    </datalist>
+                    <input list="county-area" name="area" class="input-text-s " placeholder="鄉鎮區" required
+                        autocomplete="off">
+                    <datalist id="county-area">
+                        <option value="OO區">
+                    </datalist>
+                    <input type="text" name="road" class="road input-text-l " placeholder="街路巷弄號樓" required
+                        autocomplete="off">
+                    <input type="submit" value="下一步" class="submit">
+                </form>
+            </section>
+            <section class="goods-info">
+                <table class="table">
+                    <h3 class="goods-tittle">訂單摘要</h3>
+                    <tbody class="tbody">
+                        <tr class="row">
+                            <td>小計</td>
+                            <td>NT$ 2,700</td>
+                        </tr>
+                        <tr class="row">
+                            <td>運費</td>
+                            <td>NT$ 300</td>
+                        </tr>
+                        <tr class="row">
+                            <th>總計</th>
+                            <th>NT$ 3,000</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 class="goods-tittle">購物清單</h3>
+                <ul class="goods-info-list">
+                    <li class="goods-info-item">
+                        <div class="product"><img src="https://bit.ly/2QvsT63" alt="product"></div>
+                        <div class="goods-info-item-tittle">
+                            <h5>焦糖馬卡龍（2）</h5>
+                            <h4>NT$ 900</h4>
+                        </div>
+                    </li>
+                    <li class="goods-info-item">
+                        <div class="product"><img src="https://bit.ly/2zBDAxX" alt="product"></div>
+                        <div class="goods-info-item-tittle">
+                            <h5>焦糖馬卡龍（2）</h5>
+                            <h4>NT$ 900</h4>
+                        </div>
+                    </li>
+                    <li class="goods-info-item">
+                        <div class="product"><img src="https://bit.ly/2zKOP7w" alt="product"></div>
+                        <div class="goods-info-item-tittle">
+                            <h5>焦糖馬卡龍（2）</h5>
+                            <h4>NT$ 900</h4>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!-- 修改區 -->
+    </div>
+    <footer data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+        <div class="footer-bg-dark ">
+            <div class="container mail ">
+                <a href="index.html" class="sweet-mail">
+                    <img src="img/logo-light.svg" alt="icon-small">
+                    <h3 class="mail-title">訂閱你我的甜蜜郵件</h3>
+                </a>
+                <form class="subscribe " action="index.html">
+                    <img src="img/mail-24px.png" alt="" class="ic-email">
+                    <input type="email" name="email" placeholder="請輸入EMAIL" required autocomplete="off">
+                    <input type="submit" value=" " class="submit">
+                </form>
+            </div>
+        </div>
+        <div class="footer-bg-light">
+            <div class="container info">
+                <div class="info-left">
+                    <img src="img/logotype-sm-dark.svg" class="lg-dark" alt="lg-dark" width="171px">
+                    <div class="info-left-list">
+                        <ul>
+                            <li><a href="tel:+07-1234-5678"> 07-1234-5678</a> </li>
+                            <li><a href="mailto:sweetaste@email.com">sweetaste@email.com</a> </li>
+                            <li> 800 高雄市新興區幸福路 520 號</li>
+                            <li>
+                                <img src="img/ic-line%40.svg" alt="Line" class="ic-line">
+                                <img src="img/ic-facebook.svg" alt="facebook" class="ic-fb"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-right">
+                    <img src="img/sm-今天是個吃甜點的好日子.svg" class="info-right-title"></img>
+                    <p class="copyright">
+                        © 2018 Sweetaste* All Rights Reserved
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/header.js"></script>
+    <script>
+        $(function () {
+            AOS.init();
+        });
+    </script>
+</body>
+
+</html>

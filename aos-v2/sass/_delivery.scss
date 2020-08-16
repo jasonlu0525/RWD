@@ -1,0 +1,245 @@
+//[運送]
+.transport {
+    display: grid;
+    grid-template-columns: minmax(58.9743%, 100%) minmax(38.461%, 100%);
+    grid-gap: 20px;
+    padding: 0 80px 0px;
+    margin: 30px 0 65px;
+
+    @include mobile-768 {
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+    }
+
+    @include pad-576 {
+        padding: 0;
+        margin-bottom: 0;
+        justify-content: center;
+
+    }
+
+    @include mobile-425 {
+        padding: 0;
+    }
+
+
+    .delivery {
+        background-color: $dark-green;
+
+        &-tittle {
+            color: $info-font;
+            padding: 30px 40px 0;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include mobile-425 {
+                padding: 30px 30px 0;
+            }
+
+            @include mobile-320 {
+                padding: 30px 0 0;
+            }
+
+            .circle {
+                display: flex;
+                width: 166px;
+                height: 0;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid $font-8DA291;
+
+                &-setting {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                &-light {
+                    background: url('../img/Check-circle.svg') no-repeat;
+                    background-size: contain;
+                }
+
+                &-dark {
+                    background-color: $dark-green;
+                    border-radius: 50%;
+                    border: 1px solid $font-8DA291;
+                }
+            }
+        }
+
+        &-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 8px;
+            margin: 0 40px 0;
+
+            @include mobile-425 {
+                margin: 0 30px 0;
+            }
+
+            @include mobile-320 {
+                margin: 0;
+            }
+
+            &-lable {
+                color: $info-font;
+
+                &::after {
+                    content: "*";
+                    color: red;
+                    margin-left: 3px;
+                }
+            }
+
+            .input-text-s {
+                width: 186px;
+                @include input;
+
+                @include mobile-375 {
+                    width: 153px;
+                }
+            }
+
+            .input-text-l {
+                width: 380px;
+                @include input;
+
+                @include mobile-375 {
+                    width: 315px;
+                }
+            }
+
+            .input-text-grid {
+                justify-self: end;
+            }
+
+            .phone-number-label,
+            .address-label {
+                padding-top: 8px;
+            }
+
+            .phone-number-input {
+                grid-column: 1/-1;
+                justify-self: center;
+            }
+
+            .address-label {
+                grid-column: 1/-1;
+            }
+
+            .road {
+                grid-column: 1/-1;
+                justify-self: center;
+            }
+
+            .submit {
+                grid-column: 1/-1;
+                margin: 22px -40px 0;
+                padding: 18.5px 0;
+                letter-spacing: 4px;
+                @include submit;
+                @include hover;
+
+                @include mobile-425 {
+                    margin-right: -30px;
+                    margin-left: -30px;
+                }
+
+                @include mobile-320 {
+
+                    margin: 27px 0 0 0;
+                }
+            }
+        }
+    }
+
+    .goods-info {
+        color: $font-8DA291;
+
+        @include mobile-768 {
+            display: none;
+        }
+
+        .table {
+            width: 100%;
+            margin-bottom: 20px;
+
+        }
+
+        .tbody {
+            outline: 1px solid $light-green;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            font-size: $fz-small;
+
+            &:first-of-type {
+                margin: 16px 0 8px;
+            }
+
+            &:last-of-type {
+                font-weight: $fw-b;
+                font-size: $fz-medium;
+                margin: 16px 0 16px;
+            }
+        }
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            padding: 16px 18px 0px 20px;
+            outline: 1px solid $light-green;
+        }
+
+        .goods-tittle {
+            text-align: center;
+            background-color: $light-green;
+            padding: 18.5px 4px 18.5px 0;
+            ;
+        }
+
+        &-item {
+            display: flex;
+            margin-bottom: 16px;
+            align-items: center;
+            overflow: hidden;
+
+
+            .product {
+                flex-basis: 120px;
+                margin: -33.5px 0px;
+                padding-bottom: 0.078px;
+            }
+
+            &:last-of-type>.product {
+                margin: 0;
+            }
+
+
+            &-tittle {
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: column;
+                margin-left: 20px;
+
+                h4 {
+                    text-align-last: left;
+                }
+
+                h5 {
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+//[運送]
