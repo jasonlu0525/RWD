@@ -14,6 +14,7 @@
 
 <body>
     <div class="container">
+        <label for="cellphone">test</label>
         <header class="header" data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="top-top"
             data-aos-delay="500" data-aos-once="true">
             <div class="top-menu"><img src="img/dehaze-24px.png" alt=""></div>
@@ -47,14 +48,14 @@
                     </div>
                 </div>
                 <form action="success.html" class="delivery-info">
-                    <lable for="Last-Name" class="Last-Name-lable  delivery-info-lable">姓氏</lable>
+                    <lable for="Last-Name" class="delivery-info-lable">姓氏</lable>
                     <lable for="First-Name " class="delivery-info-lable">名字</lable>
-                    <input type="text" name="Last-Name" id="Last-Name" class="input-text-grid input-text-s "
+                    <input type="text" name="LastName" id="Last-Name" class="input-text-grid input-text-s "
                         placeholder="請輸入姓氏" required autocomplete="off">
-                    <input type="text" name="First-Name" id="" class="input-text-s " placeholder="請輸入名字" required
+                    <input type="text" name="First-Name" id="First-Name " class="input-text-s " placeholder="請輸入名字" required
                         autocomplete="off">
-                    <lable for="tel" class="phone-number-label delivery-info-lable ">電話</lable>
-                    <input type="tel" class="phone-number-input input-text-l " name="Phone-Number" id="tel"
+                    <lable for="cellphone" class="phone-number-label delivery-info-lable ">電話</lable>
+                    <input type="tel" class="phone-number-input input-text-l " name="Phone-Number" id="cellphone"
                         placeholder="+886" required autocomplete="off">
                     <lable for="county" class="address-label delivery-info-lable">地址 </lable>
                     <input id="county" list="countytw" name="county" class=" input-text-grid input-text-s "
@@ -145,38 +146,40 @@
             <div class="container mail ">
                 <a href="index.html" class="sweet-mail">
                     <img src="img/logo-light.svg" alt="icon-small">
-                    <h3 class="mail-title">訂閱你我的甜蜜郵件</h3>
+                    <label for="subscribe">
+                        <h3 class="mail-title">訂閱你我的甜蜜郵件</h3>
+                    </label>
                 </a>
                 <form class="subscribe " action="index.html">
                     <img src="img/mail-24px.png" alt="" class="ic-email">
-                    <input type="email" name="email" placeholder="請輸入EMAIL" required autocomplete="off">
+                    <input type="email" name="email" placeholder="請輸入EMAIL" id="subscribe" required autocomplete="off">
                     <input type="submit" value=" " class="submit">
                 </form>
             </div>
         </div>
         <div class="footer-bg-light">
             <div class="container info">
-                <div class="info-left">
-                    <img src="img/logotype-sm-dark.svg" class="lg-dark" alt="lg-dark" width="171px">
-                    <div class="info-left-list">
-                        <ul>
-                            <li><a href="tel:+07-1234-5678"> 07-1234-5678</a> </li>
-                            <li><a href="mailto:sweetaste@email.com">sweetaste@email.com</a> </li>
-                            <li> 800 高雄市新興區幸福路 520 號</li>
-                            <li>
-                                <img src="img/ic-line%40.svg" alt="Line" class="ic-line">
-                                <img src="img/ic-facebook.svg" alt="facebook" class="ic-fb"></li>
-                        </ul>
-                    </div>
+                <div class="info-contact">
+                    <img src="img/logotype-sm-dark.svg" alt="lg-dark" width="171px">
+
+                    <ul class="info-contact-list">
+                        <li><a href="tel:+07-1234-5678"> 07-1234-5678</a> </li>
+                        <li><a href="mailto:sweetaste@email.com">sweetaste@email.com</a> </li>
+                        <li> 800 高雄市新興區幸福路 520 號</li>
+                        <li>
+                            <img src="img/ic-line%40.svg" alt="Line" class="ic-line">
+                            <img src="img/ic-facebook.svg" alt="facebook" class="ic-fb">
+                        </li>
+                    </ul>
+
                 </div>
-                <div class="info-right">
-                    <img src="img/sm-今天是個吃甜點的好日子.svg" class="info-right-title"></img>
+                <div class="info-copyright">
+                    <img src="img/sm-今天是個吃甜點的好日子.svg" class="info-copyright-title"></img>
                     <p class="copyright">
                         © 2018 Sweetaste* All Rights Reserved
                     </p>
                 </div>
             </div>
-
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

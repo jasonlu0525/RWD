@@ -25,7 +25,7 @@
 
     .delivery {
         background-color: $dark-green;
-
+overflow-x: hidden;
         &-tittle {
             color: $info-font;
             padding: 30px 40px 0;
@@ -212,7 +212,7 @@
 
             .product {
                 flex-basis: 120px;
-                margin: -33.5px 0px;
+                margin: -35.5px 0px;
                 padding-bottom: 0.078px;
             }
 

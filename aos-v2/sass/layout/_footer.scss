@@ -100,7 +100,7 @@
             padding: 39px 0 1.5rem;
         }
 
-        &-left {
+        &-contact {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -112,6 +112,12 @@
                 @include mobile-375 {
                     width: 171px;
                     margin-bottom: 40px;
+                }
+            }
+
+            &-list {
+                @include mobile-768 {
+                    margin-top: 39px;
                 }
             }
 
@@ -136,7 +142,7 @@
             color: $dark-green;
         }
 
-        &-right {
+        &-copyright {
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-end;
@@ -144,15 +150,18 @@
 
             @include pad-576 {
                 justify-content: flex-start;
+            }
 
+            .copyright {
+                margin-top: 46px;
 
-                .copyright {
+                @include pad-576 {
                     font-size: 16px;
                     margin-top: 23px;
                 }
             }
 
-            .info-right-title {
+            .info-copyright-title {
                 flex-basis: 59px;
 
                 @include pad-576 {

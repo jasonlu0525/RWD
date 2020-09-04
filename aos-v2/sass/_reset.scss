@@ -177,11 +177,12 @@ input:-webkit-autofill:hover {
 *::before,
 *::after {
     box-sizing: border-box;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 h2,h3,h4,h5{
     font-weight: $fw-b;
     text-align: center;
+    line-height: 1.2;
 }
 h2 {
     font-size: $fz-Xlarge;

@@ -21,7 +21,7 @@
     .top-menu {
         display: none;
         flex-shrink: 0;
-
+        cursor: pointer;
         @include mobile-768 {
             display: block;
         }
