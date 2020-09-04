@@ -25,7 +25,8 @@
 
     .delivery {
         background-color: $dark-green;
-overflow-x: hidden;
+        overflow-x: hidden;
+
         &-tittle {
             color: $info-font;
             padding: 30px 40px 0;
@@ -82,7 +83,7 @@ overflow-x: hidden;
                 margin: 0;
             }
 
-            &-lable {
+            &-label {
                 color: $info-font;
 
                 &::after {
